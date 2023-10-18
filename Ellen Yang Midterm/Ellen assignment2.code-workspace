@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../Downloads/Ellen assignment2"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#4f31ba",
+			"activityBar.background": "#4f31ba",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#190b07",
+			"activityBarBadge.foreground": "#e7e7e7",
+			"commandCenter.border": "#e7e7e799",
+			"sash.hoverBorder": "#4f31ba",
+			"statusBar.background": "#3e2692",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#4f31ba",
+			"statusBarItem.remoteBackground": "#3e2692",
+			"statusBarItem.remoteForeground": "#e7e7e7",
+			"titleBar.activeBackground": "#3e2692",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#3e269299",
+			"titleBar.inactiveForeground": "#e7e7e799"
+		}
+	}
+}
