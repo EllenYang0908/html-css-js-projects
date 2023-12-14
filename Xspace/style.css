@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:ital,wght@1,400;1,500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:wght@700&family=Playfair+Display:ital,wght@1,400;1,500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Jolly+Lodger&family=Montserrat:wght@700&family=Playfair+Display:ital,wght@1,400;1,500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Jolly+Lodger&family=Montserrat:wght@700&family=Playfair+Display:ital,wght@1,400;1,500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Jolly+Lodger&family=Josefin+Slab:wght@300&family=Montserrat:wght@700&family=Playfair+Display:ital,wght@1,400;1,500&family=Roboto:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    background-color: #000000; 
+    font-family: sans-serif;
+}
+
+
+.banner{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    /*background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(assets/image/image\ 22.png);
+    background-size: cover;
+    background-position: center; */
+    overflow: visible;
+    
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* Behind other content */
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 48px;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #BBA166;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li :hover::after{
+    width: 100%;
+
+}
+
+.content{
+    
+    width: 100%;
+    /*position:absolute;*/
+    margin-top: 200px;
+    transform: translateY(-50%);
+    text-align: center;
+
+    color: #ffffff;
+    
+}
+
+.content h1{
+    font-size: 90px;
+    margin-top: 100px;
+    font-family: 'Montserrat', cursive;
+}
+
+.content h2{
+    font-size: 45px;
+    margin: 30px 75px;
+    text-align: left;
+    font-family: 'Montserrat', cursive;
+    color: #BBA166
+}
+
+.content p{
+    font-size: 20px;
+    margin: 30px 75px;
+    font-weight: 80;
+    line-height: 25px;
+    text-align: left;
+    font-family: 'Josefin Slab', cursive;
+}
+/*
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    background: transparent;
+    color: #000000;
+    font-family: 'Montserrat', cursive;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+*/
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'Montserrat', cursive;
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% + 200px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+}
+
+span{
+    background: #BBA166;
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+/*
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+  }
+  
+  .buttons a.button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', cursive;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+  }
+  
+  .buttons a.button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+*/
+  
+.translation-container {
+    position: fixed; 
+    top: 20px; /* Updated bottom position */
+    right: 20px; /* Updated right position */
+    transform: translate(50%, 0);
+    z-index: 9999;
+
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#google_translate_element {
+    color: white;
+  }
+
+  /* Change the color of the "Select Language" text to white */
+.goog-te-menu-value {
+    color: white !important; /* Use !important to ensure it overrides any existing styles */
+  }
+  

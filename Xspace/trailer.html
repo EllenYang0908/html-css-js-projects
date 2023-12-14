@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Cards</title>
+  <link rel="stylesheet" href="style1.css">
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="card" id="card1" onclick="selectCard(1, 'Miss Scarlet')">
+      <img src="assets/character1.png" alt="Character 1 Image">
+    </div>
+
+    <div class="card" id="card2" onclick="selectCard(2, 'Mrs.Peacock')">
+      <img src="assets/character2.png" alt="Character 2 Image">
+    </div>
+
+    <div class="card" id="card3" onclick="selectCard(3, 'Professor Plum')">
+        <img src="assets/character3.png" alt="Character 3 Image">
+      </div>
+
+      <div class="card" id="card4" onclick="selectCard(4, 'Mr.Green')">
+        <img src="assets/character4.png" alt="Character 4 Image">
+      </div>
+
+      <div class="card" id="card5" onclick="selectCard(5, 'Colonel Mustard')">
+        <img src="assets/character5.png" alt="Character 5 Image">
+      </div>
+
+      <br>
+
+      <div>
+                
+        <a href="trailer2.html">
+          <button type = "button"><span></span>Proceed</button></a>
+
+    </div>
+  </div>
+
+  <div class="display-name" id="display-name"></div>
+  
+  <script>
+    function selectCharacter(characterName) {
+      localStorage.setItem('selectedCharacter', characterName);
+      window.location.href = 'trailer2.html';
+    }
+  </script>
+
+
+
+
+</body>
+</html>

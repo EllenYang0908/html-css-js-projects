@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Characters Around a Table</title>
+  <link rel="stylesheet" href="style2.css">
+  <script src="script.js"></script>
+
+  <style>
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000000;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-family: "Special Elite", sans-serif;
+      z-index: 999; /* Ensure the header appears above other content */
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="header">
+    <h1 id="selected-character-name">The Great Rose Theater Ruin, after Miss Scarlet was burned to death here...</h1>
+  </div>
+
+  
+  <script>
+    // Retrieve the selected character from localStorage
+    const selectedCharacter = localStorage.getItem('selectedCharacter');
+
+    // Update the content of the element with the selected character's name
+    const selectedCharacterName = document.getElementById('selected-character-name');
+    if (selectedCharacter) {
+      selectedCharacterName.textContent = `${selectedCharacter} View`;
+    }
+  </script>
+
+  <div class="scene">
+    <div class="table">
+      <!-- Boxes representing clues -->
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <!-- Characters represented by cards -->
+      <img src="assets/character2.png" alt="Mrs.Peacock" class= "character-img" >
+      <img src="assets/character3.png" alt="Prof.Plum" class= "character-img" >
+      <img src="assets/character4.png" alt="Mr.Green" class= "character-img" >
+
+      <!--
+      <div class="character" onclick="selectCharacter('Character Two')">Character 2</div>
+      <div class="character" onclick="selectCharacter('Character Three')">Character 3</div>
+      -->
+      <!-- Add more characters and boxes as needed -->
+    </div>
+  </div>
+</body>
+</html>

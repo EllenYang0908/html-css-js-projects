@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+
+* {
+
+  background-color: #000000; 
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+
+  .container {
+    position: relative; 
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center;
+    gap: 70px; /* Add some space between cards */
+  }
+  
+  .card {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 10px 20px; /* Adjust margin for spacing between cards */
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(-90px);
+  }
+
+  .card:nth-child(n) {
+    margin-top: 200px; 
+  }
+  
+  .card:hover {
+    border-color: blue;
+  }
+  
+  .display-name {
+    position: absolute;
+    top: 100px; /* Adjust top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color:#ffffff;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+
+    font-size: 70px;
+    margin-top: 10px;
+    font-family: 'Cinzel', cursive;
+  }
+
+  button{
+    position: relative;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #BBA166;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'Cinzel', cursive;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index:2;
+}
+
+span{
+    background: #BBA166;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+.card img {
+  width: 200px; /* Adjust the width to your desired size */
+  height: 350px; /* This maintains the aspect ratio */
+}

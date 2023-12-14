@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .scene {
+    width: 1200px; /* Adjust the scene width as needed */
+    height: 600px; /* Adjust the scene height as needed */
+    border: 2px solid #ad3d3d;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .table {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: #ad5a1f; /* Brown color for the table */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: #FFD700; /* Golden color for the clue boxes */
+    margin: 10px;
+  }
+  
+  .character {
+    width: 100px;
+    height: 150px;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .character-img {
+    width: 100px;
+    height: 150px;
+}
